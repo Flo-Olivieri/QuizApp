@@ -2,11 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="5dp"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="#CCF6F0"
     android:layout_height="match_parent"
+    android:background="#BDDFF8"
+    android:orientation="vertical"
+    android:padding="5dp"
     tools:context=".QuizActivity">
 
 
@@ -15,13 +15,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:textAlignment="center"
         android:gravity="center_horizontal"
-        android:textStyle="bold"
+        android:text="@string/questions_main"
+        android:textAlignment="center"
         android:textColor="#000"
         android:textSize="22sp"
-        android:text="@string/questions_main"
-         />
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,46 +33,45 @@
             android:id="@+id/txtScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
             android:layout_marginTop="5dp"
-            android:textAlignment="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:gravity="center_horizontal"
-            android:textStyle="bold"
+            android:text="@string/score_main"
+            android:textAlignment="center"
             android:textColor="#000"
             android:textSize="20sp"
-            android:text="@string/score_main"
-            android:layout_marginRight="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="3dp"
-            android:layout_marginStart="3dp"/>
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/txtCorrect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="8dp"
             android:layout_marginEnd="8dp"
-            android:textAlignment="center"
+            android:layout_marginRight="8dp"
             android:gravity="center_horizontal"
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:textSize="20sp"
             android:text="@string/correct_main"
-            />
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtWrong"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="2dp"
             android:layout_marginEnd="2dp"
-            android:textAlignment="center"
+            android:layout_marginRight="2dp"
             android:gravity="center_horizontal"
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:textSize="20sp"
             android:text="@string/wrong_main"
-            />
+            android:textAlignment="center"
+            android:textColor="#E40C0C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -87,9 +85,9 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/question_container_background"
             android:gravity="center"
             android:padding="10dp"
-            android:background="@drawable/question_container_background"
             android:text="@string/pregunta_texto"
             android:textColor="#000"
             android:textSize="25sp"
@@ -113,9 +111,9 @@
             <RadioButton
                 android:id="@+id/radio_button1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/buttons_background"
+                android:background="@drawable/button_background"
                 android:freezesText="true"
                 android:text="@string/radiobutton_answer"
                 android:textSize="22sp" />
@@ -123,9 +121,9 @@
             <RadioButton
                 android:id="@+id/radio_button2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/buttons_background"
+                android:background="@drawable/button_background"
                 android:freezesText="true"
                 android:padding="5dp"
                 android:text="@string/radiobutton_answer"
@@ -135,9 +133,9 @@
             <RadioButton
                 android:id="@+id/radio_button3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/buttons_background"
+                android:background="@drawable/button_background"
                 android:freezesText="true"
                 android:padding="5dp"
                 android:text="@string/radiobutton_answer"
@@ -147,15 +145,35 @@
             <RadioButton
                 android:id="@+id/radio_button4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/buttons_background"
+                android:background="@drawable/button_background"
                 android:freezesText="true"
                 android:padding="5dp"
                 android:text="@string/radiobutton_answer"
                 android:textColor="#000"
                 android:textSize="22sp" />
+
         </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/question_container_background"
+            android:text="@string/next_button"
+            android:textAllCaps="false"
+            android:textColor="@color/icons"
+            android:textSize="24sp" />
     </LinearLayout>
 
 </LinearLayout>

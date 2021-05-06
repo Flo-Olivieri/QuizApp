@@ -7,4 +7,5 @@
     <string name="pregunta_texto">Aquí va una pregunta</string>
     <string name="radiobutton_answer">RadioButton</string>
     <string name="timer_main">00:30</string>
+    <string name="next_button">Siguiente</string>
 </resources>
